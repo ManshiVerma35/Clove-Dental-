@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------ header nav start*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 10px 30px 0 30px;
+    align-content: center;
+    overflow: hidden;
+    background: #fff7f2;
+}
+
+.right-side-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.book-btn {
+    border-radius: 25px;
+    padding: 0 10px;
+    background: linear-gradient(to right, #ff9900, #ff6600);
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font: 16px;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background: linear-gradient(to right, #e68600, #e45500);
+}
+
+.call-btn {
+    border-radius: 25px;
+    padding: 0 10px;
+    font: 16px;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+    transition: background 0.3s ease;
+}
+
+.call-btn:hover {
+    background-color: #ddcfcf;
+}
+
+/*------------------------------------------------------------------------------ header nav ends */
+
+/*------------------------------------------------------------------------------ hero 2 section starts */
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff7f2;
+
+    /* gap: 40px; */
+    padding-left: 20px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.stat-number {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .stat-box {
+        width: 33%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-box {
+        width: 45%;
+    }
+}
+
+/*------------------------------------------------------------------------------ hero 2 section ends */
+
+/*------------------------------------------------------------------------------ hero 3 section starts */
+
+.fourth-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    font-size: 20px;
+}
+
+.treatments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.treatment-card {
+    border: 1px solid var(--Strokes, rgba(255, 224, 196, 1));
+
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.treatment-card:hover {
+    transform: scale(1.02);
+}
+
+.treatment-image {
+    width: 50%;
+    min-height: 100%;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.treatment-content {
+    padding: 20px;
+    width: 50%;
+}
+
+.treatment-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 8px;
+}
+
+.treatment-content p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.treatment-content ul {
+    margin: 10px 0;
+    padding-left: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.price {
+    color: #ffa500;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.price-value {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ffa500, #ff6600);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #e69500, #e45500);
+}
+
+@media (max-width: 600px) {
+    .treatment-card {
+        flex-direction: column;
+        max-width: 100%;
+        height: fit-content;
+    }
+
+    .treatment-image,
+    .treatment-content {
+        width: 100%;
+    }
+
+    .treatment-content {
+        padding: 15px;
+        padding-left: 27%;
+    }
+}
+
+/*------------------------------------------------------------------------------ hero 3 section ends */
+
+/*------------------------------------------------------------------------------ hero 4 section starts */
+
+.wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.wrapper p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.images img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.images:hover img {
+    transform: scale(1.05);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name {
+    color: #222;
+}
+
+.city {
+    color: orange;
+}
+
+@media (max-width: 600px) {
+    .images img {
+        height: 140px;
+    }
+
+    .info {
+        width: 200px;
+        font-size: 13px;
+    }
+}
+
+/*------------------------------------------------------------------------------ hero 4 section ends */
+
+/*------------------------------------------------------------------------------ hero 5 section starts*/
+
+.testimonial-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonial-section>p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.card-content {
+    padding: 15px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-content .person-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-content .person-profession {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/*------------------------------------------------------------------------------ hero 5 section ends */
+
+/*------------------------------------------------------------------------------ footer section 6 starts */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #442312;
+    height: 149px;
+
+}
+
+.footer-logo {
+    padding: 4px;
+    width: 174px;
+    align-content: center;
+
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: white;
+    width: 837px;
+    margin: 35px 24px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+
+.divider {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: white;
+    opacity: 0.3;
+}
+
+/*------------------------------------------------------------------------------ footer section 6 ends */
+
+
+
